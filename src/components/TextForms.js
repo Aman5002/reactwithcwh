@@ -57,7 +57,7 @@ export default function TextForms(props) {
       props.alert("Please type somthing to convert" , "danger")
     }
     else{
-    props.alert("Converted to tHis CaSe" , "success")
+    props.alert("Converted to tHiS abc CaSe" , "success")
     }
   }
   const handlechange = (event) => {
