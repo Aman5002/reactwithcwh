@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 export default function TextForms(props) {
   const [text, settext] = useState("");
   const clickUPhandler = () => {
@@ -10,7 +9,6 @@ export default function TextForms(props) {
     }
     else{
       props.alert("Converted to UPPER CASE" , "success")
-
     }
   };
   const clickLowhandler = () => {
@@ -31,7 +29,6 @@ export default function TextForms(props) {
     else{
     props.alert("Text is cleared" , "success")
     }
-
   };
   const clickchyphenhandler = () =>{
     let text1 = text.split(" ");
@@ -60,9 +57,8 @@ export default function TextForms(props) {
       props.alert("Please type somthing to convert" , "danger")
     }
     else{
-    props.alert("Converted to tHiS CaSe" , "success")
+    props.alert("Converted to tHis CaSe" , "success")
     }
-
   }
   const handlechange = (event) => {
     settext(event.target.value);
